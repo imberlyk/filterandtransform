@@ -1,0 +1,63 @@
+
+body{
+    margin: 40px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 60px;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+
+img {
+    width: 550px;
+    height: auto;
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+
+img:nth-child(1) {
+    filter: grayscale(100%);
+}
+
+img:nth-child(2) {
+    filter: sepia(80%);
+}
+
+img:nth-child(3) {
+    filter: blur(5px);
+}
+
+img:nth-child(4) {
+    filter: brightness(1.5);
+}
+
+img:nth-child(5) {
+    filter: contrast(200%);
+}
+
+
+img:nth-child(6) {
+    transform: rotate(15deg);
+}
+
+img:nth-child(7) {
+    transform: scale(1.2);
+    filter: invert(100)
+}
+
+img:nth-child(8) {
+    transform: translateX(20px) translateY(-10px) skew(10deg, 5deg);
+}
+
+
+img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
